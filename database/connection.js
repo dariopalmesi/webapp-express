@@ -1,4 +1,4 @@
-const mysql = require('myslq2');
+const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
 });
 
 connection.connect((err) => {
-    if (err) throw (err);
+    if (err) throw err;
     console.log('Connected to the MySQL');
 });
 
