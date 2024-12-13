@@ -7,7 +7,7 @@ router.get('/', MovieController.index)
 
 router.get('/:id', MovieController.show)
 
-router.post('/:id/review', MovieController.review)
+router.post('/:id/review', MovieController.postReview)
 
 
 module.exports = router
